@@ -9,7 +9,8 @@ const {
   CONSUMER_KEY,
   CONSUMER_SECRET,
   FANFOU_USERNAME,
-  FANFOU_PASSWORD
+  FANFOU_PASSWORD,
+  REQUEST_LIMIT
 } = require('./config')
 
 const ff = new Fanfou({
@@ -48,7 +49,7 @@ const find1 = async () => {
   const friends = await getFriends()
 
   console.log('你关注了却没关注你的人：')
-  async.each(friends, (id, callback) => {
+  async.eachLimit(friends, REQUEST_LIMIT, (id, callback) => {
     ff.get('/friendships/show', {
       source_login_name: FANFOU_USERNAME,
       target_login_name: id
@@ -73,7 +74,7 @@ const find2 = async () => {
   const count = []
 
   console.log('\n关注了你你却没关注他的人：')
-  async.each(followers, (id, callback) => {
+  async.eachLimit(followers, REQUEST_LIMIT, (id, callback) => {
     ff.get('/friendships/show', {
       source_login_name: FANFOU_USERNAME,
       target_login_name: id

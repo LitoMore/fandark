@@ -25,7 +25,8 @@ $ cp config.json.example config.json
   "CONSUMER_KEY": "key",
   "CONSUMER_SECRET": "secret",
   "FANFOU_USERNAME": "username",
-  "FANFOU_PASSWORD": "password"
+  "FANFOU_PASSWORD": "password",
+  "REQUEST_LIMIT": 10
 }
 
 ```
