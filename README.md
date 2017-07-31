@@ -1,10 +1,10 @@
 # fandark
 
-饭否阴暗面工具
+Fanfon-Dark Toolkit
 
-## 使用方法
+## Usage
 
-下载并安装依赖
+Download & Install dependencies
 
 ```bash
 $ git clone git@github.com:LitoMore/fandark.git
@@ -12,13 +12,13 @@ $ cd fandark
 $ npm install
 ```
 
-复制配置文件模版
+Prepare config file
 
 ```bash
 $ cp config.json.example config.json
 ```
 
-配置应用
+Configuration
 
 ```json
 {
@@ -31,8 +31,16 @@ $ cp config.json.example config.json
 
 ```
 
-运行
+Run
 
 ```bash
 $ node index.js
 ```
+
+## Related
+
+- [fanfou-sdk](https://github.com/LitoMore/fanfou-sdk-node)
+
+## License
+
+MIT @ [LitoMore](https://github.com/LitoMore)
