@@ -1,6 +1,6 @@
 # fandark
 
-Fanfon-Dark Toolkit
+Fanfou-Dark Toolkit
 
 ## Usage
 
@@ -43,4 +43,4 @@ $ node index.js
 
 ## License
 
-MIT @ [LitoMore](https://github.com/LitoMore)
+MIT © [LitoMore](https://github.com/LitoMore)
