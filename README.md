@@ -1,6 +1,6 @@
 # fandark
 
-Fanfou-Dark Toolkit
+Dark side of Fanfou
 
 <div align="center"><img width="75%" height="75%" src="https://raw.githubusercontent.com/LitoMore/fandark/master/screenshot.png" /></div>
 
