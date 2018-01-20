@@ -1,8 +1,8 @@
 {
   "name": "fandark",
   "version": "1.0.0",
-  "description": "饭否阴暗面工具",
-  "main": "index.js",
+  "description": "Dark side of Fanfou",
+  "main": "app.js",
   "scripts": {
     "test": "standard"
   },

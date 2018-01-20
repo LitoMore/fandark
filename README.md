@@ -34,7 +34,7 @@ Configuration
 Run
 
 ```bash
-$ node index.js
+$ node app.js
 ```
 
 ## Related
