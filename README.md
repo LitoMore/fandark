@@ -2,7 +2,7 @@
 
 Fanfou-Dark Toolkit
 
-<div align="center"><img width="50%" height="50%" src="https://raw.githubusercontent.com/LitoMore/fandark/master/screenshot.png" /></div>
+<div align="center"><img width="75%" height="75%" src="https://raw.githubusercontent.com/LitoMore/fandark/master/screenshot.png" /></div>
 
 ## Usage
 
