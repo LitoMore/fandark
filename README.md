@@ -2,6 +2,8 @@
 
 Fanfou-Dark Toolkit
 
+<div align="center"><img witdh="50%" height="50%" src="https://raw.githubusercontent.com/LitoMore/fandark/master/screenshot.png" /></div>
+
 ## Usage
 
 Download & Install dependencies
