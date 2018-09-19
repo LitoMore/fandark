@@ -4,7 +4,7 @@
   "description": "Dark side of Fanfou",
   "main": "app.js",
   "scripts": {
-    "test": "standard"
+    "test": "xo"
   },
   "repository": {
     "type": "git",
@@ -16,11 +16,16 @@
     "async": "^2.6.1",
     "chalk": "^2.4.1",
     "cli-table2": "^0.2.0",
-    "fanfou-sdk": "^2.7.3",
+    "fanfou-sdk": "^3.0.1",
     "ora": "^1.4.0",
     "pangu": "^3.3.0"
   },
   "devDependencies": {
-    "standard": "^10.0.2"
+    "xo": "^0.23.0"
+  },
+  "xo": {
+    "rules": {
+      "camelcase": 0
+    }
   }
 }
