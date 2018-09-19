@@ -36,7 +36,11 @@ Configuration
 Run
 
 ```bash
-$ node app.js
+# Check your relationships
+$ node fo.js
+
+# Delete all statuses
+$ node del.js
 ```
 
 ## Related
