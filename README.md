@@ -41,6 +41,9 @@ $ node fo.js
 
 # Delete all statuses
 $ node del.js
+
+# Export all statuses
+$ node export.js > backup.json
 ```
 
 ## Related
