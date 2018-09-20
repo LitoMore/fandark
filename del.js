@@ -20,7 +20,7 @@ const ff = new Fanfou({
 
 const del = ids => {
 	async.eachLimit(ids, requestLimit, (id, cb) => {
-		ff.get('/statuses/show', {id})
+		ff.post('/statuses/destroy', {id})
 			.then(() => {
 				cb();
 			})
