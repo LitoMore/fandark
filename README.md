@@ -44,6 +44,9 @@ $ node del.js
 
 # Export all statuses
 $ node export.js > backup.json
+
+# Delete all statuses on schedule
+$ node del-schedule.js
 ```
 
 ## Related
