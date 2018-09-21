@@ -36,17 +36,23 @@ Configuration
 Run
 
 ```bash
+# Export all statuses
+$ node export.js > backup.json
+
 # Check your relationships
 $ node fo.js
 
 # Delete all statuses
 $ node del.js
 
-# Export all statuses
-$ node export.js > backup.json
-
 # Delete all statuses on schedule
 $ node del-schedule.js
+
+# Delete all favorites
+$ node unfav.js
+
+# Delete all favorites on schedule
+$ node unfav-schedule.js
 ```
 
 ## Related
