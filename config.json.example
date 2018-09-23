@@ -3,5 +3,6 @@
   "CONSUMER_SECRET": "",
   "FANFOU_USERNAME": "",
   "FANFOU_PASSWORD": "",
+  "HTTPS": true,
   "REQUEST_LIMIT": 30
 }

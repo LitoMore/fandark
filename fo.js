@@ -12,14 +12,17 @@ const {
 	CONSUMER_SECRET: consumerSecret,
 	FANFOU_USERNAME: username,
 	FANFOU_PASSWORD: password,
-	REQUEST_LIMIT
+	HTTPS: https,
+	REQUEST_LIMIT: requestLimit
 } = require('./config');
 
 const ff = new Fanfou({
 	consumerKey,
 	consumerSecret,
 	username,
-	password
+	password,
+	protocol: https ? 'https:' : 'http:',
+	fakeHttps: Boolean(https)
 });
 
 const xauth = () => {
@@ -38,7 +41,7 @@ const find1 = async spinner => {
 	const friends = await getFriends();
 	const list = [];
 	return new Promise((resolve, reject) => {
-		async.eachLimit(friends, REQUEST_LIMIT, (id, callback) => {
+		async.eachLimit(friends, requestLimit, (id, callback) => {
 			ff.get('/friendships/show', {
 				source_login_name: username,
 				target_login_name: id
@@ -77,7 +80,7 @@ const find2 = async spinner => {
 	const followers = await getFollowers();
 	const list = [];
 	return new Promise((resolve, reject) => {
-		async.eachLimit(followers, REQUEST_LIMIT, (id, callback) => {
+		async.eachLimit(followers, requestLimit, (id, callback) => {
 			ff.get('/friendships/show', {
 				source_login_name: username,
 				target_login_name: id

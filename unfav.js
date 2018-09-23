@@ -8,6 +8,7 @@ const {
 	CONSUMER_SECRET: consumerSecret,
 	FANFOU_USERNAME: username,
 	FANFOU_PASSWORD: password,
+	HTTPS: https,
 	REQUEST_LIMIT: requestLimit
 } = require('./config');
 
@@ -15,7 +16,9 @@ const ff = new Fanfou({
 	consumerKey,
 	consumerSecret,
 	username,
-	password
+	password,
+	protocol: https ? 'https:' : 'http:',
+	fakeHttps: Boolean(https)
 });
 
 const unfav = ids => {
