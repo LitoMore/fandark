@@ -28,6 +28,7 @@ Configuration
   "CONSUMER_SECRET": "secret",
   "FANFOU_USERNAME": "username",
   "FANFOU_PASSWORD": "password",
+  "HTTPS": true,
   "REQUEST_LIMIT": 10
 }
 
