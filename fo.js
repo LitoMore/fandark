@@ -55,6 +55,7 @@ const find1 = async spinner => {
 					});
 					spinner.text = `谁没关注你 - ${chalk.green(name)} ${chalk.blue(id)}`;
 				}
+
 				callback();
 			}).catch(error => {
 				const name = pangu.spacing(error.message);
@@ -94,6 +95,7 @@ const find2 = async spinner => {
 					});
 					spinner.text = `你没关注谁 - ${chalk.green(name)} ${chalk.blue(id)}`;
 				}
+
 				callback();
 			}).catch(error => {
 				const name = pangu.spacing(error.message);
@@ -152,6 +154,7 @@ const run = async () => {
 		];
 		table.push(line);
 	}
+
 	console.log(table.toString());
 };
 

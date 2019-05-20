@@ -22,11 +22,12 @@
     "pangu": "^3.3.0"
   },
   "devDependencies": {
-    "xo": "^0.23.0"
+    "xo": "^0.24.0"
   },
   "xo": {
     "rules": {
-      "camelcase": 0
+      "camelcase": 0,
+      "import/no-unresolved": 0
     }
   }
 }
