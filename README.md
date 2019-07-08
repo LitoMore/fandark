@@ -38,7 +38,7 @@ Run
 
 ```bash
 # Export all statuses
-$ node export.js > backup.json
+$ node export.js > backup/file1.json
 
 # Check your relationships
 $ node fo.js
