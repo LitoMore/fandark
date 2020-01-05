@@ -54,6 +54,9 @@ $ node unfav.js
 
 # Delete all favorites on schedule
 $ node unfav-schedule.js
+
+# Find out who she is
+$ node who-she-is.js
 ```
 
 ## Related
